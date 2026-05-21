@@ -31,6 +31,16 @@
             "type": "remote",
             "url": "https://mcp.exa.ai/mcp",
             "enabled": true
+        },
+        "chrome-devtools": {
+            "type": "local",
+            "enabled": false,
+            "command": [
+                "npx",
+                "-y",
+                "chrome-devtools-mcp@latest",
+                "--browser-url=http://127.0.0.1:9222"
+            ]
         }
     },
     "plugin": [
