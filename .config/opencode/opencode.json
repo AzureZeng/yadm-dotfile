@@ -41,6 +41,16 @@
                 "chrome-devtools-mcp@latest",
                 "--browser-url=http://127.0.0.1:9222"
             ]
+        },
+        "microsoft-nuget": {
+            "type": "local",
+            "command": [
+                "dnx",
+                "NuGet.Mcp.Server",
+                "--yes",
+                "--source",
+                "https://api.nuget.org/v3/index.json"
+            ]
         }
     },
     "plugin": [
