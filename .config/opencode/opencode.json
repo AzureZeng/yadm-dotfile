@@ -55,6 +55,7 @@
         }
     },
     "plugin": [
-        "@tarquinen/opencode-dcp"
+        "@tarquinen/opencode-dcp",
+        "opencode-mem"
     ]
 }
