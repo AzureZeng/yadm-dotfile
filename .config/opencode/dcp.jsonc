@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Opencode-DCP/opencode-dynamic-context-pruning/master/dcp.schema.json",
+  "compress": {
+    "mode": "range",
+    "permission": "allow",
+    "showCompression": false,
+    "summaryBuffer": true,
+    "maxContextLimit": "70%",
+    "minContextLimit": 50000,
+    "nudgeFrequency": 5,
+    "iterationNudgeThreshold": 15,
+    "nudgeForce": "soft",
+    "protectedTools": [],
+    "modelMaxLimits": {
+      "deepseek/deepseek-v4-flash": "75%",
+      "deepseek/deepseek-v4-pro": "75%",
+      "opencode-go/deepseek-v4-flash": "75%",
+      "opencode-go/deepseek-v4-pro": "75%"
+    }
+  }
+}
