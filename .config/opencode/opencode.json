@@ -52,19 +52,10 @@
         "--source",
         "https://api.nuget.org/v3/index.json"
       ]
-    },
-    "codemem": {
-      "type": "local",
-      "command": [
-        "npx",
-        "codemem",
-        "mcp"
-      ],
-      "enabled": true
     }
   },
   "plugin": [
     "@tarquinen/opencode-dcp",
-    "@codemem/opencode-plugin"
+    "opencode-mem"
   ]
 }
