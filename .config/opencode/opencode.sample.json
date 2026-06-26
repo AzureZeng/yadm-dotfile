@@ -1,0 +1,61 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode-go/deepseek-v4-flash",
+  "lsp": true,
+  "mcp": {
+    "microsoft-learn": {
+      "type": "remote",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "{file:~/.config/opencode/.secrets/context7.txt}"
+      }
+    },
+    "rider": {
+      "type": "remote",
+      "url": "http://127.0.0.1:64342/stream",
+      "enabled": false
+    },
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {file:~/.config/opencode/.secrets/github-mcp.txt}"
+      }
+    },
+    "exa": {
+      "type": "remote",
+      "url": "https://mcp.exa.ai/mcp",
+      "enabled": true
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "enabled": false,
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--browser-url=http://127.0.0.1:9222"
+      ]
+    },
+    "microsoft-nuget": {
+      "type": "local",
+      "enabled": false,
+      "command": [
+        "dnx",
+        "NuGet.Mcp.Server",
+        "--yes",
+        "--source",
+        "https://api.nuget.org/v3/index.json"
+      ]
+    }
+  },
+  "plugin": [
+    "@tarquinen/opencode-dcp",
+    "opencode-mem"
+  ]
+}
