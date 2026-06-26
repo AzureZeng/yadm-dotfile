@@ -180,7 +180,7 @@
 
   // Language for auto-capture summaries (default: "auto" for auto-detection)
   // Options: "auto", "en", "id", "zh", "ja", "es", "fr", "de", "ru", "pt", "ar", "ko"
-  // "autoCaptureLanguage": "auto",
+  "autoCaptureLanguage": "en",
 
   // ============================================
   // Toast Notifications
