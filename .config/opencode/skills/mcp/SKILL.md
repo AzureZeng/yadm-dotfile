@@ -11,7 +11,6 @@ MCP servers provide specialized tools, but calling them consumes tokens. This sk
 
 This skill only applies when one or more of these MCP servers are configured in the session:
 
-- rider
 - microsoft-learn
 - context7
 
@@ -20,21 +19,6 @@ If no MCP servers are enabled, ignore this skill entirely.
 ## Rules
 
 Depending on which MCP servers are available, apply the relevant rules below.
-
-### rider
-
-**When to use:**
-
-- Refactoring (JetBrains Rider supported refactors)
-- Text search/replace in files by text or regex
-- Debugging
-- Terminal commands
-- Database queries via Rider's database tools
-
-**When not to use:**
-
-- Simple file reads/writes — use native tools (Read, Write, Edit) instead
-- Operations that don't require Rider's specific capabilities — Rider MCP calls are expensive
 
 ### context7
 
