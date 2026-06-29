@@ -6,7 +6,7 @@
 
 ## Engram Memory
 
-- When searching (`mem_search`, `mem_context`) or saving (`mem_save`) memories, always use **English** for queries and content to ensure optimal FTS5 retrieval performance.
+- When using any memory tool (`mem_save`, `mem_update`, `mem_search`, `mem_judge`, `mem_compare` etc.) to write into FTS5-indexed fields (`title`, `content`, `query`, `reason` etc.), always use **English** to ensure optimal FTS5 retrieval performance.
 
 ### FTS5 CJK (Chinese, Japanese, Korean) text limitation
 | Scenario | Example | Result |
