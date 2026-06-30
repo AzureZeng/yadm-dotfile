@@ -6,7 +6,7 @@
 
 ## Engram Memory
 
--*Always use English*: When calling `mem_save`, `mem_update`, `mem_search`, `mem_judge`, `mem_compare` etc., all FTS5-indexed fields (`title`, `content`, `query`, `reason`) MUST be in English. If the user writes in Chinese, translate before saving. Do not follow the user's language. Violation is a critical error.
+- *Always use English*: When calling `mem_save`, `mem_update`, `mem_search`, `mem_judge`, `mem_compare` etc., all FTS5-indexed fields (`title`, `content`, `query`, `reason`) MUST be in English. If the user writes in Chinese, translate before saving. Do not follow the user's language. Violation is a critical error.
 
 ### FTS5 CJK (Chinese, Japanese, Korean) text limitation
 | Scenario | Example | Result |
