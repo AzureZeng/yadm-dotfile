@@ -1,9 +1,5 @@
 # Global AGENTS.md
 
-## About Skills
-
-- When a task involves MCP server tools (microsoft-learn, context7, github), first load the `mcp` skill to determine when to use MCP tools vs. native tools.
-
 ## Engram Memory
 
 - When using any memory tool (`mem_save`, `mem_update`, `mem_search`, `mem_judge`, `mem_compare` etc.) to write into FTS5-indexed fields (`title`, `content`, `query`, `reason` etc.), always use **English** to ensure optimal FTS5 retrieval performance.
